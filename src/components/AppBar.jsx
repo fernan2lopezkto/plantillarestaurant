@@ -7,34 +7,26 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
-import logoPrincipal from '../assets/restIcon.svg'
+import logoPrincipal from '../assets/restIcon.svg';
 
-const pages = ['Restaurant', 'servicios', 'Contacto'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = [
+  { name: 'Especialidad', id: 'restaurant' },
+  { name: 'Servicios', id: 'servicios' },
+  { name: 'Contacto', id: 'contacto' }
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -48,7 +40,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="#"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -93,8 +85,8 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography component="a" href={`#${page.id}`} textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -106,7 +98,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="#"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -120,22 +112,22 @@ function ResponsiveAppBar() {
           >
             Sabor
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },justifyContent: 'flex-end' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                href={`#${page.id}`}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
-
-          
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;
