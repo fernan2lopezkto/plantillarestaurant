@@ -40,10 +40,10 @@ function Especialidad() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
-        }} id="restaurant">
-        <Grid container >
+        }} id="especialidad">
+        <Grid container justifyContent="center" alignItems='center' spacing={4} mb={4}>
             <Grid item xs={12}>
-                <Typography variant="h4" component="h3" textAlign="center" mb={4}>
+                <Typography variant="h4" component="h3" textAlign="center" mb={2} mt={4}>
                     Especialidades de la Casa
                 </Typography>
             </Grid>
@@ -54,6 +54,7 @@ function Especialidad() {
                       <CardMedia
                         component="img"
                         height="140"
+                        //src={logoPrincipal}
                         image={esp.img}
                         alt={esp.name}
                       />

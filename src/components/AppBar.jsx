@@ -13,7 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 import logoPrincipal from '../assets/restIcon.svg';
 
 const pages = [
-  { name: 'Especialidad', id: 'restaurant' },
+  { name: 'Especialidad', id: 'especialidad' },
+  { name: 'Restaurant', id: 'restaurant' },
   { name: 'Servicios', id: 'servicios' },
   { name: 'Contacto', id: 'contacto' }
 ];
@@ -86,7 +87,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                  <Typography component="a" href={`#${page.id}`} textAlign="center">{page.name}</Typography>
+                  <Typography component="a" color="inherit" href={`#${page.id}`} textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -117,7 +118,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page.name}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#667755', display: 'block' }}
                 href={`#${page.id}`}
               >
                 {page.name}

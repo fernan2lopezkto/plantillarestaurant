@@ -1,5 +1,8 @@
-import Especialidad from "./components/Especialidad"
 import Home from "./components/Home"
+import Especialidad from "./components/Especialidad"
+import Restaurant from "./components/Restaurant"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -8,6 +11,9 @@ function App() {
     <>
       <Home />
       <Especialidad />
+      <Restaurant />
+      <Contact />
+      <Footer />
     </>
   )
 }
