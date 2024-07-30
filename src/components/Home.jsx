@@ -12,10 +12,7 @@ function Home() {
       minHeight: '90vh',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center',
-      backgroundImage: `url(${background})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundColor: '#222222'
+      alignItems: 'center'
     }} >
         <Grid container justifyContent="center" alignItems='center' spacing={4} >
           <Grid item xs={12}>

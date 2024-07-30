@@ -48,7 +48,7 @@ function Especialidad() {
                 </Typography>
             </Grid>
             {especialidades.map((esp, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
+                <Grid item xs={12} sm={6} md={4} key={index} justifyContent="center" alignItems='center'>
                     <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                       <CardMedia
