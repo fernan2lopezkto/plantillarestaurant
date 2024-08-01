@@ -13,17 +13,17 @@ const especialidades = [
     {name: " Ceviche",
     description: "Este plato nacional de Perú vive un momento de mucha fama en la actualidad, luego de destacarse en diferentes ferias gastronómicas realizadas en distintas partes del mundo. El ceviche peruano se prepara con pescado o mariscos crudos, cebolla, chile, jugo de limón y sal. Puede ir acompañado de camote, choclo, cancha serrana o chifles.",
     precio: "$740",
-    img: "/especialidad/ceviche.jpg"
+    img: "/plantillarestaurant/especialidad/ceviche.jpg"
     },
     {name: "Paella",
     description: "La paella es un clásico de España que ha sabido ganarse el aprecio internacional. Originaria de Valencia, debe su nombre a la gigante “paellera” dónde se cocina. Se trata de un buen plato de arroz y mariscos, condimentado con azafrán y hierbas verdes. Como siempre, hay muchas versiones y se hace también con pollo, cerdo o, simplemente, vegetales.",
     precio: "$740",
-    img: "/especialidad/paella.webp"
+    img: "/plantillarestaurant/especialidad/paella.webp"
     },
     {name: " Burrito",
     description: "Su exquisitez y practicidad les han permitido a los burritos consagrarse como otra de las comidas más populares del universo. Autóctono de México, contiene algunos de los ingredientes más representativos de su país: una tortilla tradicional, a la que se le agrega un relleno -generalmente carne, pollo y maíz- y luego se la enrolla para formar el famoso burrito.",
     precio: "$740",
-    img: "/especialidad/burrito.jpg"
+    img: "/plantillarestaurant/especialidad/burrito.jpg"
     }
 ]
 

@@ -1,19 +1,26 @@
 import { Container, Typography, Grid } from "@mui/material"
 
 //import bgImage from '../assets/bg1.webp';
-import background from '../assets/bg1.webp';
+import fondo from '../assets/img/fondos/fondo1.webp';
 
 function Home() {
 
   return (
-
+<div style={{ 
+      backgroundImage:  `url(${fondo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundColor: '#222444'
+    }}>
     <Container 
     sx={{
       minHeight: '90vh',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: 'rgba(200,200,200,0.8)'
     }} >
+
         <Grid container justifyContent="center" alignItems='center' spacing={4} >
           <Grid item xs={12}>
             <Typography variant="h2" component="h1" textAlign="center">
@@ -32,7 +39,8 @@ function Home() {
           </Grid>
         </Grid>
     </Container>
-
+      
+    </div>
   )
 }
 export default Home

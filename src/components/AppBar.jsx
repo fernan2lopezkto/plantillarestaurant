@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-import logoPrincipal from '../assets/restIcon.svg';
+import logoPrincipal from '../assets/img/restIcon.svg';
 
 const pages = [
   { name: 'Especialidad', id: 'especialidad' },

@@ -6,7 +6,7 @@ import Facebook from "@mui/icons-material/Facebook";
 
 import useTheme from "@mui/material/styles/useTheme"
 
-import logoPrincipal from '../assets/restIcon.svg';
+import logoPrincipal from '../assets/img/restIcon.svg';
 
 
 
