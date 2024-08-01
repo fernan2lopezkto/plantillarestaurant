@@ -34,7 +34,7 @@ function Especialidad() {
     const theme = useTheme();
 
     return (
-    <Container sx={{
+    <Container maxWidth={false} sx={{
         minHeight: '100vh',
         backgroundColor: theme.palette.primary.main,
         display: 'flex',
@@ -50,11 +50,10 @@ function Especialidad() {
             {especialidades.map((esp, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index} justifyContent="center" alignItems='center'>
                     <Card sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
+                    <CardActionArea href="#restaurant">
                       <CardMedia
                         component="img"
                         height="140"
-                        //src={logoPrincipal}
                         image={esp.img}
                         alt={esp.name}
                       />

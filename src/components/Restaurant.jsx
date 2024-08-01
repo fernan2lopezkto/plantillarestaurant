@@ -4,6 +4,8 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider'
 
+import fondo from '../assets/img/fondos/fondo1.webp';
+
 const menuItemsPlatos = [
     { name: 'Ensalada César', price: '$10' },
     { name: 'Pizza Margarita', price: '$12' },
@@ -40,6 +42,15 @@ const menuItemsPlatos = [
 
 function Restaurant() {
   return (
+    <div style={{ 
+      backgroundImage:  `url(${fondo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundColor: '#222444'
+    }}>
+      <div style={{
+        backgroundColor: 'rgba(220, 220, 220, 0.8)'
+      }}>
     <Container id="restaurant">
         <Grid container spacing={4} justifyContent="center" alignItems="center">
             <Grid item xs={12}>
@@ -97,6 +108,8 @@ function Restaurant() {
             </Grid>
         </Grid>
     </Container>
+    </div>
+    </div>
   )
 }
 export default Restaurant

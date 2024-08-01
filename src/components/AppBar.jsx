@@ -15,7 +15,7 @@ import logoPrincipal from '../assets/img/restIcon.svg';
 const pages = [
   { name: 'Especialidad', id: 'especialidad' },
   { name: 'Restaurant', id: 'restaurant' },
-  { name: 'Servicios', id: 'servicios' },
+//  { name: 'Servicios', id: 'servicios' },
   { name: 'Contacto', id: 'contacto' }
 ];
 

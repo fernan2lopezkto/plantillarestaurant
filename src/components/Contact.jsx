@@ -1,6 +1,5 @@
 import { Container, Typography, Grid, Box, Button } from "@mui/material"
 
-import AndroidIcon from "@mui/icons-material/Android";
 import Instagram from "@mui/icons-material/Instagram";
 import Facebook from "@mui/icons-material/Facebook";
 
@@ -17,14 +16,13 @@ function Contact() {
   const theme = useTheme();
 
   return (
-    <Container pt={2} id="contacto"
+    <Container pt={2} id="contacto" maxWidth={false}
     sx={{
       minHeight: '10vh',
       backgroundColor: theme.palette.primary.main,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-
     }} >
         <Grid container justifyContent="center" alignItems='center' spacing={6} pt={6} >
           <Grid item xs={12} sm={6} md={4} sx={{textAlign: 'center'}}>
@@ -32,7 +30,11 @@ function Contact() {
               Contacto
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }} >
-            <AndroidIcon sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
+              <Typography >
+                4code.uy@gmail.com
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }} >
             <Instagram sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
             <Facebook sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
             </Box>

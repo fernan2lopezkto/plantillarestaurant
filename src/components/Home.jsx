@@ -12,13 +12,14 @@ function Home() {
       backgroundSize: 'cover',
       backgroundColor: '#222444'
     }}>
+<div style={{ backgroundColor: 'rgba(200, 240, 200, 0.5)' }}>
     <Container 
     sx={{
       minHeight: '90vh',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'rgba(200,200,200,0.8)'
+      //backgroundColor: 'rgba(200,200,200,0.8)'
     }} >
 
         <Grid container justifyContent="center" alignItems='center' spacing={4} >
@@ -39,7 +40,7 @@ function Home() {
           </Grid>
         </Grid>
     </Container>
-      
+    </div>
     </div>
   )
 }
