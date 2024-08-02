@@ -35,7 +35,7 @@ function Especialidad() {
   const theme = useTheme();
   
   const animations = {
-    slideIn: { initial: { x: '100%' }, animate: { x: 0 } },
+    slideIn: { initial: { x: '100%', opacity: 0 }, animate: { x: 0, opacity: 1 } },
     fadeIn: { initial: { opacity: 0 }, animate: { opacity: 1 } }
   };
 
@@ -61,7 +61,7 @@ function Especialidad() {
                 ref={ref}
                 initial={animations.slideIn.initial}
                 animate={inView ? animations.slideIn.animate : animations.slideIn.initial}
-                transition={{ duration: 1 }}
+                transition={{ duration: 2 }}
               >
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea href="#restaurant">

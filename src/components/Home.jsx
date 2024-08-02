@@ -1,5 +1,8 @@
 import { Container, Typography, Grid } from "@mui/material"
 
+
+import { motion } from 'framer-motion';
+
 //import bgImage from '../assets/bg1.webp';
 import fondo from '../assets/img/fondos/fondo1.webp';
 
@@ -21,7 +24,10 @@ function Home() {
       alignItems: 'center',
       //backgroundColor: 'rgba(200,200,200,0.8)'
     }} >
-
+<motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}>
         <Grid container justifyContent="center" alignItems='center' spacing={4} >
           <Grid item xs={12}>
             <Typography variant="h2" component="h1" textAlign="center">
@@ -39,6 +45,7 @@ function Home() {
             </Typography>
           </Grid>
         </Grid>
+        </motion.div>
     </Container>
     </div>
     </div>

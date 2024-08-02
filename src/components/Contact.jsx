@@ -1,5 +1,6 @@
 import { Container, Typography, Grid, Box, Button } from "@mui/material"
 
+import { IconButton } from "@mui/material";
 import Instagram from "@mui/icons-material/Instagram";
 import Facebook from "@mui/icons-material/Facebook";
 
@@ -26,17 +27,29 @@ function Contact() {
     }} >
         <Grid container justifyContent="center" alignItems='center' spacing={6} pt={6} >
           <Grid item xs={12} sm={6} md={4} sx={{textAlign: 'center'}}>
-            <Typography mb={2}>
+            <Typography variant="h4" mt={2}>
               Contacto
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }} >
+              <IconButton onClick={event =>  window.location.href='https://www.instagram.com/4code.uy/'}>
+            <Instagram sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
+              </IconButton>
+              <IconButton onClick={event =>  window.location.href='https://linktr.ee/fernan2lopezkto'}>
+            <Facebook sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
+              </IconButton>
+            </Box>
+            <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }} >
+              <Button 
+              variant="contained"
+              size="large"
+              color="primary"
+              target="_top"
+              rel="noopener noreferrer"
+              href={`mailto:4code.uy@gmail.com`}>
               <Typography >
                 4code.uy@gmail.com
               </Typography>
-            </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }} >
-            <Instagram sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
-            <Facebook sx={{ display: { xs: 'flex' }, fontSize: 50, mr: 1 }} />
+              </Button>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -47,9 +60,12 @@ function Contact() {
               El Rincón del Sabor
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Typography variant="p" component="p" textAlign="center">
-              njuy
+          <Grid item xs={12} sm={6} md={4} textAlign="center">
+            <Typography variant="h4" textAlign="center">
+              Ubicacion
+            </Typography>
+            <Typography variant="p" textAlign="center">
+              Barros Blancos, Canelones, Uruguay
             </Typography>
           </Grid>
         </Grid>
