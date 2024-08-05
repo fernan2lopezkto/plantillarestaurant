@@ -18,7 +18,7 @@ function Home() {
 <div style={{ backgroundColor: 'rgba(200, 240, 200, 0.5)' }}>
     <Container 
     sx={{
-      minHeight: '90vh',
+      minHeight: '50vh',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
