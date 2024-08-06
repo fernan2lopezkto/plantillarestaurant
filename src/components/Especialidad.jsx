@@ -41,7 +41,7 @@ function Especialidad() {
 
   return (
     <Container maxWidth={false} sx={{
-      minHeight: '100vh',
+      //minHeight: '100vh',
       backgroundColor: theme.palette.primary.main,
       display: 'flex',
       justifyContent: 'center',
@@ -56,14 +56,14 @@ function Especialidad() {
         {especialidades.map((esp, index) => {
           const { ref, inView } = useInView({ triggerOnce: true });
           return (
-            <Grid item xs={12} sm={6} md={4} key={index} justifyContent="center" alignItems='center'>
+            <Grid item xs={12} sm={6} md={4} key={index} justifyContent="center" alignItems='center' mb={4}>
               <motion.div
                 ref={ref}
                 initial={animations.slideIn.initial}
                 animate={inView ? animations.slideIn.animate : animations.slideIn.initial}
                 transition={{ duration: 2 }}
               >
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ maxWidth: 345 }} >
                   <CardActionArea href="#restaurant">
                     <CardMedia
                       component="img"

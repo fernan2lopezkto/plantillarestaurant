@@ -1,12 +1,10 @@
-import Home from "./components/Home"
-import Especialidad from "./components/Especialidad"
-import Restaurant from "./components/Restaurant"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-
+import Home from "./components/Home";
+import Especialidad from "./components/Especialidad";
+import Restaurant from "./components/Restaurant";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
-
   return (
     <>
       <Home />
@@ -15,7 +13,7 @@ function App() {
       <Contact />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
