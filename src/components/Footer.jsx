@@ -12,13 +12,12 @@ function Footer() {
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Typography variant="h6">
-            4Code.uy
+           Created by 4Code.uy
           </Typography>
         </Box>
         <Box>
           <Fab variant="extended" onClick={handleClick}>
             <NavigationIcon />
-            Navigate
           </Fab>
         </Box>
       </Toolbar>
