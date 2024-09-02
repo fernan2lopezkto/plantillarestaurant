@@ -2,10 +2,8 @@ import { Container, Typography, Grid } from "@mui/material";
 
 import { motion } from "framer-motion";
 
-//import bgImage from '../assets/bg1.webp';
-import fondo from "../assets/img/fondos/fondo1.webp";
 
-import Alert from "@mui/material/Alert";
+import fondo from "../assets/img/fondos/fondo1.webp";
 import Stack from "@mui/material/Stack";
 
 function Home() {
@@ -19,12 +17,6 @@ function Home() {
       }}
     >
       <Stack sx={{ width: "100%" }} spacing={2}>
-        <Alert severity="info">
-          Todo lo de esta plantilla es ficticio, creado con IA
-        </Alert>
-        <Alert severity="info">
-          los Liks son reales y llevan al contacto del creador de esta plantilla
-        </Alert>
       </Stack>
       <div style={{ backgroundColor: "rgba(200, 240, 200, 0.5)" }}>
         <Container
