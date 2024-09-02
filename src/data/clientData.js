@@ -1,7 +1,7 @@
 
 
 const clientData = {
-  companyName: "Dulce Inspiracion",
+  companyName: "El Rincon Del Sabor",
   address: "Ruta 8 km26.500, Barros Blancos, Canelones",
   phone: "92834535",
   email: "4code.uy@gmail.com",

@@ -4,6 +4,7 @@ import Especialidad from "./components/Especialidad";
 import Restaurant from "./components/Restaurant";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <Especialidad />
       <Restaurant />
+      <PreguntasFrecuentes />
       <Contact />
       <Footer />
     </>

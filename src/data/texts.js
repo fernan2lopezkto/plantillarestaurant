@@ -3,7 +3,7 @@
 const texts = {
   // Textos del componente Home.jsx
   welcomeMessage: "Bienvenidos a",
-  title: "Dulce Inspiración",
+  title: "El Rincón del Sabor",
   description: "Un lugar donde cada creación dulce cuenta una historia. Con más de tres años de experiencia en el arte de la repostería, en Dulce Inspiración nos esforzamos por hacer de cada bocado una experiencia única y memorable. Nuestra pasión por los detalles se refleja en cada uno de nuestros pasteles, postres y dulces personalizados, todos hechos con amor y dedicación para nuestros clientes.",
 
   // Textos del componente Especialidad.jsx
