@@ -53,6 +53,41 @@ function Especialidad() {
             Especialidades de la Casa
           </Typography>
         </Grid>
+        <Grid item xs={12} sm={6} md={4} justifyContent="center" alignItems='center' mb={4}
+        sx={{
+          display: {
+            xs: "block",
+            sm: "none",
+          }
+        }}>
+              
+                <Card sx={{ maxWidth: 345 }} >
+                  <CardActionArea href="#restaurant">
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={especialidades[0].img}
+                      alt={especialidades[0].name}
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        {especialidades[0].name}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {especialidades[0].description}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              
+            </Grid>
+        
+        <Grid container sx={{
+          display: {
+            xs: "none",
+            sm: "flex",
+          }
+        }} justifyContent="center" alignItems='center' spacing={4} mb={4} ml={1}>
         {especialidades.map((esp, index) => {
           const { ref, inView } = useInView({ triggerOnce: true });
           return (
@@ -85,6 +120,7 @@ function Especialidad() {
             </Grid>
           );
         })}
+        </Grid>
       </Grid>
     </Container>
   );

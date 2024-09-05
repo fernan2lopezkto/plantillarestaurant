@@ -5,6 +5,7 @@ import Restaurant from "./components/Restaurant";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
+import About from "./components/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Especialidad />
       <Restaurant />
       <PreguntasFrecuentes />
+      <About />
       <Contact />
       <Footer />
     </>
