@@ -6,11 +6,13 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
 import About from "./components/About";
+import Calendario from "./components/Calendario";
 
 function App() {
   return (
     <>
       <AlertPlantilla />
+      <Calendario />
       <Home />
       <Especialidad />
       <Restaurant />
