@@ -6,16 +6,16 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
 import About from "./components/About";
-import Calendario from "./components/Calendario";
+import Reservas from "./components/Reservas";
 
 function App() {
   return (
     <>
       <AlertPlantilla />
-      <Calendario />
       <Home />
       <Especialidad />
       <Restaurant />
+      <Reservas />
       <PreguntasFrecuentes />
       <About />
       <Contact />
